@@ -6,9 +6,9 @@ import org.apache.commons.collections.CollectionUtils;
 
 public class Utils {
 	
-	public static <T> Collection<T> getIntersection(Collection<T> first, Collection<T> second){
+	public static <T> Collection<T> getIntersection(Collection<T> aFirstCollection, Collection<T> aSecondCollection){
 		
-		Collection<T> union = CollectionUtils.intersection(first, second);
+		Collection<T> union = CollectionUtils.intersection(aFirstCollection, aSecondCollection);
 		return union;
 		
 	}
