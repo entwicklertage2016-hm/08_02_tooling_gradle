@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import org.apache.commons.collections.CollectionUtils;
 
-public class App {
+public class Utils {
 	
 	public static <T> Collection<T> getIntersection(Collection<T> first, Collection<T> second){
 		

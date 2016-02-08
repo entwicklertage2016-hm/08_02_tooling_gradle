@@ -9,20 +9,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class AppTest {
+public class UtilsTest {
 	
 	@Test
 	public void canIntersectTwoCollections(){
-		Collection<String> result = App.getIntersection(
+		Collection<String> result = Utils.getIntersection(
 				Arrays.asList("Hans", "Paul", "Richard", "Knödelkopf"),
 				Arrays.asList("Hans", "Käse", "Anton", "Richard")
 		);
 		assertThat(result, containsInAnyOrder("Hans", "Richard"));
 	}
-	
-//    @Test
-//    public void canConstructAPersonWithAName() {
-//        Person person = new Person("Larry");
-//        assertEquals("Larry", person.getName());
-//    }
 }
